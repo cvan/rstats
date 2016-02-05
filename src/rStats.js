@@ -1,3 +1,5 @@
+/* global define, module */
+
 // performance.now() polyfill from https://gist.github.com/paulirish/5438650
 'use strict';
 
@@ -32,7 +34,7 @@
 
 } )();
 
-window.rStats = function rStats ( settings ) {
+function rStats ( settings ) {
 
     function iterateKeys ( array, callback ) {
         var keys = Object.keys( array );
@@ -448,6 +450,10 @@ window.rStats = function rStats ( settings ) {
 
 }
 
-if (typeof module === 'object') {
-  module.exports = window.rStats;
+if (typeof define === 'function' && define.amd) {
+    define('rStats', rStats);
+} else if (typeof exports !== 'undefined' && typeof module !== 'undefined') {
+    module.exports = rStats;
+} else if (window) {
+    window.rStats = rStats;
 }

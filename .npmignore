@@ -1,0 +1,6 @@
+*.log
+.DS_Store
+.npmignore
+bower_components/
+demo/
+node_modules/

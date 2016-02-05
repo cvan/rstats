@@ -1,0 +1,27 @@
+{
+  "name": "rstats-js",
+  "version": "1.0.0",
+  "description": "Tool for measuring and visualizing performance for web games and interactive experiences.",
+  "main": "src/rStats.js",
+  "authors": [
+    "Jaume Sanchez Elias <hello@clicktorelease.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/spite/rstats/",
+  "keywords": [
+    "stats",
+    "perf",
+    "performance",
+    "three",
+    "three.js",
+    "3d",
+    "webgl",
+    "browser"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "demo",
+    "node_modules"
+  ]
+}
